@@ -1,0 +1,42 @@
+﻿<Window x:Class="BibliotekaFull.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotekaFull"
+        mc:Ignorable="d"
+        Title="Окно администратора" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0">
+            <ListView Height="240" Width="298" SelectionChanged="ListView_SelectionChanged" x:Name="ItemProd">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Id}">Код</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Name}">Наименование</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Cost}">Стоимость</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Descrip}">Описание</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button x:Name="AddButton" Content="Добавить" Margin="5" Click="AddButton_Click" ></Button>
+            <Button x:Name="EditProdButton" Content="Редактировать" Margin="5" Click="EditProdButton_Click"></Button>
+            <Button x:Name="DelButton" Content="Удалить" Margin="5" Padding="3" Background="CadetBlue" Click="DelButton_Click"></Button>
+        </StackPanel>
+
+        <StackPanel Margin="423,25,141,18">
+            <Image x:Name="ImageProd" Width="204" Height="134"/>
+            <Button x:Name="EditButton" Content="Редактирование изображения товара" Margin="5" Click="EditButton_Click" ></Button>
+
+            <Label Content="Наименование"></Label>
+            <TextBox x:Name="NameProd" Margin="5"></TextBox>
+            <Label Content="Стоимость"></Label>
+            <TextBox x:Name="CostProd" Margin="5"></TextBox>
+            <Label Content="Описание"></Label>
+            <TextBox x:Name="DescripProd" Margin="5"></TextBox>
+            
+            <Button x:Name="ShowOrderButton" Content="Просмотр заказов" Margin="5" Click="ShowOrderButton_Click"></Button>
+            <Button x:Name="BackButton" Content="Назад" Margin="5" Padding="3" Background="Khaki" Click="BackButton_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

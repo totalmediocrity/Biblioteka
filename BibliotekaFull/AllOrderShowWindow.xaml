@@ -1,0 +1,31 @@
+﻿<Window x:Class="BibliotekaFull.AllOrderShowWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotekaFull"
+        mc:Ignorable="d"
+        Title="AllOrderShowWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0">
+            <ListView Height="240" Width="298" x:Name="ItemProd" SelectionChanged="ItemProd_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Id}">Код</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Date}">Дата заказа</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = User.Login}">Пользователь</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path = Address.Address1}">Адрес</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+
+        <StackPanel Margin="423,97,141,97">
+            <Label Content="Адрес доставки"></Label>
+            <ComboBox x:Name="AddressProd" Margin="5"></ComboBox>
+            <Button x:Name="EditButton" Content="Изменить данные" Margin="5" Click="EditButton_Click" ></Button>
+            <Button x:Name="DelButton" Content="Отмена заказа" Margin="5" Click="DelButton_Click" ></Button>
+            <Button x:Name="BackButton" Content="Назад" Margin="5" Padding="3" Background="Khaki" Click="BackButton_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
