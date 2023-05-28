@@ -24,7 +24,6 @@ public partial class Product
     {
         get
         {
-
             BitmapImage bitmapImage = new BitmapImage();
             MemoryStream mem = new MemoryStream(Image);
             bitmapImage.BeginInit();
