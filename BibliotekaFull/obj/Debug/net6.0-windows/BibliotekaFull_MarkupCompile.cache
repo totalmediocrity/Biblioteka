@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\BibliotekaFull\BibliotekaFull\App.xaml
-6-1960925716
+8-1638431739
 
-16-808204664
+18935567491
 238177446118
-AdminWindow.xaml;LogWindow.xaml;OrderWindow.xaml;RegistrWindow.xaml;SotrWindow.xaml;UserWindow.xaml;
+AdminWindow.xaml;AllOrderShowWindow.xaml;LogWindow.xaml;OrderSotrWindow.xaml;OrderWindow.xaml;RegistrWindow.xaml;SotrWindow.xaml;UserWindow.xaml;
 
 False
 

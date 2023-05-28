@@ -88,3 +88,7 @@ D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\OrderWindow.baml
 D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\RegistrWindow.baml
 D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\SotrWindow.baml
 D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\UserWindow.baml
+D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\AllOrderShowWindow.g.cs
+D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\OrderSotrWindow.g.cs
+D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\AllOrderShowWindow.baml
+D:\BibliotekaFull\BibliotekaFull\obj\Debug\net6.0-windows\OrderSotrWindow.baml

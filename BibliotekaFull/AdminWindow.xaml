@@ -8,14 +8,22 @@
         Title="Окно администратора" Height="450" Width="800">
     <Grid>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0">
-            <ListView Height="240" Width="298" SelectionChanged="ListView_SelectionChanged" x:Name="ItemProd">
+            <ListView Height="240" Width="332" SelectionChanged="ListView_SelectionChanged" x:Name="ItemProd">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn DisplayMemberBinding="{Binding Path = Id}">Код</GridViewColumn>
                         <GridViewColumn DisplayMemberBinding="{Binding Path = Name}">Наименование</GridViewColumn>
                         <GridViewColumn DisplayMemberBinding="{Binding Path = Cost}">Стоимость</GridViewColumn>
                         <GridViewColumn DisplayMemberBinding="{Binding Path = Descrip}">Описание</GridViewColumn>
+                        <GridViewColumn Header="Картинка">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding Path = bdImage}" x:Name="ImageProd" Width="50" ></Image>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
                     </GridView>
+                  
                 </ListView.View>
             </ListView>
 

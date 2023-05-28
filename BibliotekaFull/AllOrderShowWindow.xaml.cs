@@ -83,5 +83,9 @@ namespace BibliotekaFull
     
         }
 
+        private void ItemProd_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

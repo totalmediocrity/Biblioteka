@@ -28,6 +28,7 @@ namespace BibliotekaFull
             InitializeComponent();
 
             ItemProd.ItemsSource = biblioteka.Products.ToList();
+
         }
 
         BibliotekaContext biblioteka = new BibliotekaContext();

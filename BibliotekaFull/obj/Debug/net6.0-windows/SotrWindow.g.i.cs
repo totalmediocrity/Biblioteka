@@ -101,7 +101,7 @@ namespace BibliotekaFull {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BibliotekaFull;V1.0.0.0;component/sotrwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BibliotekaFull;component/sotrwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SotrWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
